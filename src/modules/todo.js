@@ -1,7 +1,7 @@
 import { desc, List } from './element.js';
 import whattodo from './whattodo.js';
 
-class todo {
+class Todo {
   constructor() {
     this.index = 0;
     this.completed = false;
@@ -83,4 +83,4 @@ class todo {
   }
 }
 
-export default todo;
+export default Todo;

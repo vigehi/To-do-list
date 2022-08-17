@@ -1,4 +1,3 @@
-
 import { List } from './element.js';
 
 const createTodoList = (getId) => {

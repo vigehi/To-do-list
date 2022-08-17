@@ -1,18 +1,12 @@
-
 import './style.css';
-import todo from './modules/todo.js';
+import Todo from './modules/todo.js';
 import {
   desc,
-  clear,
-  statusIn,
-  List,
-  deleteb,
   form,
-  refresh, 
-  edit
+  refresh,
 } from './modules/element.js';
 
-const todo1 = new todo();
+const todo1 = new Todo();
 
 todo1.renderPage();
 
@@ -23,7 +17,6 @@ desc.addEventListener('keypress', (e) => {
     form.reset();
   }
 });
-
 
 const load = () => window.location.reload();
 

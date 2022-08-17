@@ -7,15 +7,13 @@ const deleteb = document.getElementsByClassName('btn-delete');
 const form = document.getElementsByTagName('form')[0];
 const refresh = document.querySelector('.btn-refresh');
 
-
-
 export {
-desc,
-clear,
-statusIn,
-List,
-deleteb,
-form,
-refresh, 
-edit
+  desc,
+  clear,
+  statusIn,
+  List,
+  deleteb,
+  form,
+  refresh,
+  edit,
 };
