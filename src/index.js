@@ -4,6 +4,7 @@ import {
   desc,
   form,
   refresh,
+  clear,
 } from './modules/element.js';
 
 const todo1 = new Todo();
@@ -21,3 +22,6 @@ desc.addEventListener('keypress', (e) => {
 const load = () => window.location.reload();
 
 refresh.addEventListener('click', load);
+clear.addEventListener('click', () => {
+  todo1.clearCompleted();
+});
