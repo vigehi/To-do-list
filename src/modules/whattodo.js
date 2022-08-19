@@ -3,11 +3,9 @@ import { List } from './element.js';
 const createTodoList = (getId) => {
   const rowHTML = `
   <div class="left">
-    <input type="checkbox" class="status" id = ${getId.index}  ${
-  getId.completed ? 'checked' : ''
+    <input type="checkbox" class="status" id = ${getId.index}  ${getId.completed ? 'checked' : ''
 } />
-    <p class="desc ${getId.completed ? 'strike-through' : ''}">${
-  getId.description
+    <p class="desc ${getId.completed ? 'strike-through' : ''}">${getId.description
 }</p>
   </div>
  `;

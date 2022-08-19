@@ -4,11 +4,8 @@ import {
   desc,
   clear,
   statusIn,
-  List,
-  deleteb,
   form,
   refresh,
-  edit,
 } from './modules/element.js';
 
 const todo1 = new Todo();
@@ -31,12 +28,11 @@ clear.addEventListener('click', () => {
 });
 
 for (let i = 0; i < statusIn.length; i += 1) {
-statusIn[i].addEventListener('change', (ev) => {
-todo1.changeStatus(ev.target.id, ev.target.checked);
- const { parentNode } = ev.target;
-parentNode.querySelector('.desc').classList.toggle('strike-through');
- });
+  statusIn[i].addEventListener('change', (ev) => {
+    todo1.changeStatus(ev.target.id, ev.target.checked);
+    const { parentNode } = ev.target;
+    parentNode.querySelector('.desc').classList.toggle('strike-through');
+  });
 }
 
-
- //https://pbphpsolutions.com/php-notification-alert-when-a-new-record-is-inserted-using-ajax.html
+// https://pbphpsolutions.com/php-notification-alert-when-a-new-record-is-inserted-using-ajax.html
