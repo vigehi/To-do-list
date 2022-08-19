@@ -8,7 +8,9 @@ const createTodoList = (getId) => {
 } />
     <p class="desc ${getId.completed ? 'strike-through' : ''}">${
   getId.description
-}</p>`;
+}</p>
+  </div>
+ `;
   return rowHTML;
 };
 
@@ -19,5 +21,4 @@ const whattodo = (getId) => {
   listRow.innerHTML = rowHTML;
   List.appendChild(listRow);
 };
-
 export default whattodo;
