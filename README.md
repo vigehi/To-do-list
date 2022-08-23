@@ -54,6 +54,9 @@ linter - `npx stylelint "**/*.{css,scss}"` on the root of your directory of your
 - Now runt the following:
  `npm install`  - on the root directory of the project to install the required packages
  `npm start`   - on the root directory of the project to start the project 
+ 
+ ### Live Demo  link
+ -[To-do](https://vigehi.github.io/To-do-list/dist/)
 
 ## Authors
 
